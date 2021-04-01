@@ -7,16 +7,16 @@
 2. Replace the existing `index.html` by downloading your desired webpage as the new `index.html` (right click, `Save as`, and save as `index.html`)
 3. Add these lines to the top of your `<head>` tag in your new `index.html` file
 
-```
+```html
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="http://localhost:3000/index.js"></script>
 <base href="[THE BASE URL OF YOUR DESIRED WEBPAGE i.e. https://www.facebook.com or https://en.wikipedia.org]">
 ```
 
-_Note, the <base> tag will help all of the local scripts and links point at the right URL_
+_Note, the `<base>` tag will help all of the local scripts and links point at the right URL_
 
 4. Run 
-```
+```sh
 npx browser-sync start --server --files '*.css, *.html'
 ```
 5. Change `styles.css` and watch it hot reload on your local copy of the website. Best enjoyed with 2 screens 👍
